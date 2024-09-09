@@ -1,0 +1,26 @@
+{
+  "repoUrl": "https://github.com/feit-comp30019/2024s2-project-1-the-late-bros",
+  "teamName": "The Late Bros",
+  "teamMembers": [
+    {
+      "name": "Thomas Lam",
+      "github": "tlam333",
+      "email": "tsanh@student.unimelb.edu.au"
+    },
+    {
+      "name": "Chon Lok Chiang",
+      "github": "JonasChiang0814",
+      "email": "chonlokc@student.unimelb.edu.au"
+    },
+    {
+      "name": "Riley Mitchell",
+      "github": "Riz-Mitchell",
+      "email": "rmmitc@student.unimelb.edu.au"
+    },
+    {
+      "name": "Théodore Cousin",
+      "github": "TheodoreCouz",
+      "email": "tcousin@student.unimelb.edu.au"
+    }
+  ]
+}
