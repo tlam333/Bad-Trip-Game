@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: shelftexture
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_Parent: {fileID: 2100000, guid: 3785f6c31224bf946baff8e19047b808, type: 2}
+  m_Parent: {fileID: 2100000, guid: 1cb7696f3f0aba0409167d95fc9d4c22, type: 2}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
