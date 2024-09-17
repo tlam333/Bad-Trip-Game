@@ -3511,7 +3511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SPRINT_KEY: 304
   CROUCH_KEY: 99
-  speed: 2.5
+  speed: 5
   sprintMultiplier: 2
   crouchSpeed: 1
   crouchHeight: 0.8
