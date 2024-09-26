@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GuardPatrol : MonoBehaviour
@@ -44,20 +42,4 @@ public class GuardPatrol : MonoBehaviour
             }
         }
     }
-
-    void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Player")) {
-            Debug.Log("Within Range");
-            speed = 0;
-        }
-    }
-
-    void OnTriggerExit(Collider other) {
-        if (other.gameObject.CompareTag("Player")) {
-            Debug.Log("Outside Range");
-            speed = 5;
-        }
-    }
 }
-
-

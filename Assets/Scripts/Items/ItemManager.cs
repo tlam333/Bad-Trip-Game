@@ -161,6 +161,9 @@ public class ItemManager : MonoBehaviour
             // Add throwing force
             rb.AddForce((cameraDirection + upVector) * throwMultiplier);
         }
+
+        // Add a temporary script to detect collision with the guard
+        item.gameObject.AddComponent<ThrownItemCollisionHandler>().Initialize(this);
     }
 
     private void HandleUseItem() {
