@@ -7,17 +7,18 @@ public class BeamDetection : MonoBehaviour
     public Transform respawnPoint; // Reference to the respawn point
     public TextMeshProUGUI beamDetectedText; // Reference to the TextMeshProUGUI or UI Text component
     public float textDisplayDuration = 2f; // Duration to display the text
-
-    void OnTriggerEnter(Collider other)
+    private bool isActive = true;
+   void OnTriggerEnter(Collider other)
+{
+    // Check if the object that entered the trigger is the player and if the script is active
+    if (other.CompareTag("Player") && isActive)
     {
-        // Check if the object that entered the trigger is the player
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("Player detected in the beam!");
-            RespawnPlayer(other.gameObject);
-            StartCoroutine(ShowText(other.gameObject));
-        }
+        Debug.Log("Player detected in the beam!");
+        RespawnPlayer(other.gameObject);
+        StartCoroutine(ShowText(other.gameObject));
     }
+}
+
 
     IEnumerator ShowText(GameObject player)
     {
@@ -33,6 +34,7 @@ public class BeamDetection : MonoBehaviour
 
     void RespawnPlayer(GameObject player)
 {
+    
     // Get relevant components
     Rigidbody rb = player.GetComponent<Rigidbody>();
     PlayerMovement movementScript = player.GetComponent<PlayerMovement>();
@@ -81,6 +83,11 @@ public class BeamDetection : MonoBehaviour
     {
         movementScript.enabled = true;
     }
+    
 }
-
+public void DisableBeamDetection()
+    {
+        isActive = false;
+        Debug.Log("Beam detection disabled.");
+    }
 }
