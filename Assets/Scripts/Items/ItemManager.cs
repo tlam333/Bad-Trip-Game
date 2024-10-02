@@ -59,7 +59,7 @@ public class ItemManager : MonoBehaviour
             HandleDropItem();
         }
 
-        if (Input.GetMouseButtonDown(USE_MOUSE_BUTTON) && canUseItem)
+        if (Input.GetMouseButtonDown(USE_MOUSE_BUTTON) && canUseItem && currentHand)
         {
             HandleUseItem();
             canUseItem = false;  // Disable until the button is released

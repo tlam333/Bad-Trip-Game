@@ -2,33 +2,31 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
-public class Bong : Item {
+public class Bong : ItemTest {
 
     [SerializeField] float jumpBoostDuration = 5f;
-    [SerializeField] PlayerMovement playerMovement;
-    [SerializeField] Slider progressBar;
-    [SerializeField] IntoxicationManager intoxicationManager;
+    // [SerializeField] PlayerMovementAdvanced playerMovementAdvanced;
 
     private bool isUsingBong = false;
 
 
-    public override void Use()
+    public override void Use(IntoxicationManager intoxicationManagerRef)
     {
         if (!isUsingBong) {
             isUsingBong = true;
 
-            intoxicationManager.AddIntoxication();
+            intoxicationManagerRef.AddIntoxication();
 
             // Set Jump Height
-            playerMovement.SetJumpHeight(playerMovement.GetJumpHeight() * 3);
+            // playerMovementAdvanced.SetJumpHeight(playerMovementAdvanced.GetJumpHeight() * 3);
 
             // Set Gravity
-            playerMovement.SetGravity(playerMovement.GetGravity() / 8);
+            // playerMovementAdvanced.SetGravity(playerMovementAdvanced.GetGravity() / 8);
 
             // Initialize and start progress bar
-            progressBar.gameObject.SetActive(true); // Show progress bar
-            progressBar.maxValue = jumpBoostDuration; // Set max value
-            progressBar.value = jumpBoostDuration; // Initialize value
+            itemDurationBar.gameObject.SetActive(true); // Show progress bar
+            itemDurationBar.maxValue = jumpBoostDuration; // Set max value
+            itemDurationBar.value = jumpBoostDuration; // Initialize value
 
             StartCoroutine(ResetJumpHeightAfterDuration(jumpBoostDuration));
         }
@@ -39,19 +37,19 @@ public class Bong : Item {
 
         while (elapsedTime < duration) {
             elapsedTime += Time.deltaTime;
-            progressBar.value = duration - elapsedTime; // Update progress bar value
+            itemDurationBar.value = duration - elapsedTime; // Update progress bar value
             yield return null;
         }
 
         // Reset Jump Height
-        playerMovement.SetJumpHeight(playerMovement.GetJumpHeight() / 3);
+        //playerMovementAdvanced.SetJumpHeight(playerMovementAdvanced.GetJumpHeight() / 3);
 
         // Reset Gravity
-        playerMovement.SetGravity(playerMovement.GetGravity() * 8);
+        // playerMovementAdvanced.SetGravity(playerMovement.GetGravity() * 8);
 
         isUsingBong = false;
 
         // Hide progress bar
-        progressBar.gameObject.SetActive(false);
+        itemDurationBar.gameObject.SetActive(false);
     }
 }
