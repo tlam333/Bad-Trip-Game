@@ -7,6 +7,7 @@ using System.Threading;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.TextCore.Text;
 
 public class PlayerMovement : MonoBehaviour
@@ -37,6 +38,11 @@ public class PlayerMovement : MonoBehaviour
     private float targetHeight; // Target height for the controller
     private Vector3 targetCenter; // Target center for the controller
 
+    public Transform orientation;
+
+    float horizontalInput;
+    float verticalInput;
+
     private void Start() {
         controller = GetComponent<CharacterController>();
         normalHeight = controller.height;
@@ -55,10 +61,10 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = 0f;
         }
 
-        float moveX = Input.GetAxis("Horizontal");
-        float moveZ = Input.GetAxis("Vertical");
+        horizontalInput = Input.GetAxisRaw("Horizontal");
+        verticalInput = Input.GetAxisRaw("Vertical");
 
-        Vector3 move = transform.right * moveX + transform.forward * moveZ;
+        Vector3 moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
         // Deal with speed calculation
         float currentSpeed = speed;
@@ -72,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
             currentSpeed = crouchSpeed;
         }
 
-        controller.Move(currentSpeed * Time.deltaTime * move);
+        controller.Move(currentSpeed * Time.deltaTime * moveDirection);
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {

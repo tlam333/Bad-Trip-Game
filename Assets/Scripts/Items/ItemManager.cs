@@ -13,7 +13,7 @@ public class ItemManager : MonoBehaviour
     [SerializeField] KeyCode OPEN_KEY = KeyCode.R;
     [SerializeField] int USE_MOUSE_BUTTON = 0;
 
-    private bool usingItem;
+    private bool canUseItem;
 
     //private PlayerUI playerUI;
 
@@ -42,7 +42,7 @@ public class ItemManager : MonoBehaviour
         canPickUpItem = true;
         currentHand = null;
         onDoorKnob = false;
-        usingItem = false;
+        canUseItem = true;
         // playerUI = GetComponent<PlayerUI>();
     }
 
@@ -59,9 +59,16 @@ public class ItemManager : MonoBehaviour
             HandleDropItem();
         }
 
-        // If LMB down and you're holding an item
-        if (Input.GetMouseButton(USE_MOUSE_BUTTON) && currentHand) {
+        if (Input.GetMouseButtonDown(USE_MOUSE_BUTTON) && canUseItem && currentHand)
+        {
             HandleUseItem();
+            canUseItem = false;  // Disable until the button is released
+        }
+
+        // Reset the flag when the mouse button is released
+        if (Input.GetMouseButtonUp(USE_MOUSE_BUTTON))
+        {
+            canUseItem = true;
         }
 
         if (Input.GetKey(OPEN_KEY) && onDoorKnob) {
