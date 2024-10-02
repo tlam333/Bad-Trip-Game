@@ -31,11 +31,11 @@ Material:
     m_Floats:
     - _Amount: 0
     - _Amplitude: 3.76
-    - _CutOutThresh: 0.32
+    - _CutOutThresh: 0.305
     - _Distance: 4.14
     - _Speed: 9.86
     - _Transparency: 0.28
     m_Colors:
-    - _TintColor: {r: 0.3584906, g: 0.3440547, b: 0, a: 1}
+    - _TintColor: {r: 0.4509804, g: 0.39607844, b: 0, a: 1}
     - _Tintcolor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
