@@ -62,20 +62,30 @@ public class ItemPickupSystem : MonoBehaviour
         Vector3 origin = playerCamera.transform.position;
         Vector3 direction = playerCamera.transform.forward;
 
-        // Perform the SphereCast again to check for pickupable items
-        if (Physics.SphereCast(origin, sphereRadius, direction, out RaycastHit hitInfo, maxDistance))
-        {
-            ItemTest pickupable = hitInfo.collider.GetComponent<ItemTest>();
-            if (pickupable != null)
-            {
-                // Pick up the item
-                Debug.Log("Picked up: " + hitInfo.collider.name);
-                currentlyHeldItem = pickupable;
+        // Perform the SphereCastAll to check for all pickupable items
+        RaycastHit[] hits = Physics.SphereCastAll(origin, sphereRadius, direction, maxDistance);
 
-                pickupable.Pickup(itemPos);
+        if (hits.Length > 0)
+        {
+            foreach (RaycastHit hitInfo in hits)
+            {
+
+                ItemTest pickupable = hitInfo.collider.GetComponent<ItemTest>();
+                if (pickupable != null)
+                {
+                    // Pick up the item
+                    Debug.Log("Picked up: " + hitInfo.collider.name);
+                    currentlyHeldItem = pickupable;
+
+                    pickupable.Pickup(itemPos);
+
+                    // Since you only want to pick up one item at a time, exit the loop after picking up the first item
+                    break;
+                }
             }
         }
     }
+
 
     // Drop the currently held item
     private void TryDropItem()
