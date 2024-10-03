@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class first_person_view : MonoBehaviour
+public class FirstPersonView : MonoBehaviour
 {
-    public Transform player; // player to which the camera is attached
-    public float mouse_sensitivity = 4f;
-    float camera_vert_rot = 0f;
+    private Camera playerCamera; // Reference to the Camera component
+    public float mouseSensitivity = 4f;
+    private float cameraVertRot = 0f;
 
     // Start is called before the first frame update
     void Start()
     {
+        playerCamera = GetComponent<Camera>(); // Get the Camera component on this GameObject
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -18,13 +19,13 @@ public class first_person_view : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float input_x = Input.GetAxis("Mouse X") * mouse_sensitivity;
-        float input_y = Input.GetAxis("Mouse Y") * mouse_sensitivity;
+        float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
+        float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
 
-        camera_vert_rot -= input_y;
-        camera_vert_rot = Mathf.Clamp(camera_vert_rot, -90f, 90f);
-        transform.localEulerAngles = Vector3.right * camera_vert_rot;
+        cameraVertRot -= inputY;
+        cameraVertRot = Mathf.Clamp(cameraVertRot, -90f, 90f);
+        playerCamera.transform.localEulerAngles = Vector3.right * cameraVertRot;
 
-        player.Rotate(Vector3.up * input_x);
+        transform.Rotate(Vector3.up * inputX); // Rotate the parent object (which holds the camera)
     }
 }
