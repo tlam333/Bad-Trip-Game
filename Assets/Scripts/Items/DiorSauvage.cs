@@ -52,7 +52,9 @@ public class DiorSauvage : ItemTest {
 
     private void ChangeRenderMode(bool transparent) {
 
-    if (transparent) {
+        
+
+        if (transparent) {
             GetComponent<Renderer>().material = transparentMat;
 
             // Start the smooth transition to 50% alpha
