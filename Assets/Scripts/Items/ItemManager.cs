@@ -16,7 +16,7 @@ public class ItemManager : MonoBehaviour
     private bool usingItem;
 
     //private PlayerUI playerUI;
-
+    private String syringeTag = "Syringe";
     private String itemTag = "Item";
     private String DoorTag = "Door";
 
@@ -80,7 +80,7 @@ public class ItemManager : MonoBehaviour
             onDoorKnob = true;
         }
         // Check if the other item is already in the list and if not add it to the list
-        if (other.gameObject.CompareTag(itemTag) && !itemsInRange.Contains(other)) {
+        if ((other.gameObject.CompareTag(itemTag) || other.gameObject.CompareTag(syringeTag)) && !itemsInRange.Contains(other)) {
             //playerUI.UpdateText("Press F to pick up");
             itemsInRange.Add(other);
         }
@@ -88,7 +88,7 @@ public class ItemManager : MonoBehaviour
     }
 
     private void OnTriggerExit(Collider other) {
-        if (other.gameObject.CompareTag(itemTag) && itemsInRange.Contains(other)) {
+        if ((other.gameObject.CompareTag(itemTag) || other.gameObject.CompareTag(syringeTag)) && itemsInRange.Contains(other)) {
 
             itemsInRange.Remove(other);
         }
@@ -162,8 +162,7 @@ public class ItemManager : MonoBehaviour
             rb.AddForce((cameraDirection + upVector) * throwMultiplier);
         }
 
-        // Add a temporary script to detect collision with the guard
-        item.gameObject.AddComponent<ThrownItemCollisionHandler>().Initialize(this);
+
     }
 
     private void HandleUseItem() {
