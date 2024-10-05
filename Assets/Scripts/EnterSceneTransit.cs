@@ -1,20 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class EnterSceneTransit : MonoBehaviour
 {
     public string scenename;
-    public GameObject sceneTransitionPrefab;
+    public GameObject sceneTransitionPrefab; // Reference to the SceneTransition prefab
 
-    public void PlayGame() {
-        TriggerSceneTransition();
-    }
-
-    public void QuitGame() {
-        Debug.Log("QUIT");
-        Application.Quit();
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            // Call the transition instead of directly loading the scene
+            TriggerSceneTransition();
+        }
     }
 
     public void TriggerSceneTransition()
