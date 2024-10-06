@@ -49,7 +49,7 @@ public class ItemPickupSystem : MonoBehaviour
             if (pickupable != null && currentlyHeldItem == null)
             {
                 // Show a UI prompt like "Press F to pick up"
-                Debug.Log("Looking at a pickupable item: " + hitInfo.collider.name);
+                // Debug.Log("Looking at a pickupable item: " + hitInfo.collider.name);
             }
         }
     }
@@ -74,7 +74,7 @@ public class ItemPickupSystem : MonoBehaviour
                 if (pickupable != null)
                 {
                     // Pick up the item
-                    Debug.Log("Picked up: " + hitInfo.collider.name);
+                    // Debug.Log("Picked up: " + hitInfo.collider.name);
                     currentlyHeldItem = pickupable;
 
                     pickupable.Pickup(itemPos);

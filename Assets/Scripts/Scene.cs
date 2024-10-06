@@ -9,6 +9,7 @@ public class Scene : MonoBehaviour
  
     void OnTriggerEnter(Collider other){
         if(other.CompareTag("Player")){
+            Debug.Log("Scene Name: " + scenename);
             SceneManager.LoadScene(scenename);
         }
     }
