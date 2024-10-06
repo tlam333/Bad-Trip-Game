@@ -8,6 +8,9 @@ public class BeamDetection : MonoBehaviour
     public TextMeshProUGUI beamDetectedText; // Reference to the TextMeshProUGUI or UI Text component
     public float textDisplayDuration = 2f; // Duration to display the text
     private bool isActive = true;
+
+    public AudioSource detectionSound;
+
    void OnTriggerEnter(Collider other)
 {
     // Check if the object that entered the trigger is the player and if the script is active
@@ -15,6 +18,8 @@ public class BeamDetection : MonoBehaviour
     {
         Debug.Log("Player detected in the beam!");
         RespawnPlayer(other.gameObject);
+        detectionSound.time = 0.3f;
+        detectionSound.Play();  // Play the sound when the player is detected
         StartCoroutine(ShowText(other.gameObject));
     }
 }
