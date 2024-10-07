@@ -6,6 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/StartScene.unity
-    guid: 06cbe14e58ef1404d920a5b1f51db1ff
+    path: Assets/Scenes/FinalGame/MainMenu.unity
+    guid: 85a2a671e75d0874898c84adcf99e925
+  - enabled: 1
+    path: Assets/Scenes/FinalGame/VentMaze.unity
+    guid: d83c30fc31d167d4dbfb0340f329d46a
+  - enabled: 1
+    path: Assets/Scenes/FinalGame/TransitionScene.unity
+    guid: 45b5f71984db6ec48a238ac020f991aa
+  - enabled: 1
+    path: Assets/Scenes/FinalGame/SupermarketInterior.unity
+    guid: d03daf4a76d412941bee3b2d7a04df4e
+  - enabled: 1
+    path: Assets/Scenes/FinalGame/Map.unity
+    guid: ad0510f6aaf354647aeac79e062e2091
+  - enabled: 1
+    path: Assets/Scenes/FinalGame/door3.unity
+    guid: 3a8b38e14ec03fa4098e27f20dbc80f5
+  - enabled: 1
+    path: Assets/Scenes/FinalGame/door1.unity
+    guid: d0db32cefe8bfbd42833372e4b4ee3ab
+  - enabled: 1
+    path: Assets/Scenes/FinalGame/door2.unity
+    guid: 2e529f1b458ac574fb779cdc70fc2f9f
   m_configObjects: {}
