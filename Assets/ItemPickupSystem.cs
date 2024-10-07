@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using TMPro;
 
 public class ItemPickupSystem : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class ItemPickupSystem : MonoBehaviour
     public float maxDistance = 5f;    // The max distance for detection
     public KeyCode pickupKey = KeyCode.F; // Key to pick up items
     public KeyCode dropKey = KeyCode.G;   // Key to drop items
+
+    public TextMeshProUGUI pickupText;
 
     public IntoxicationManager intoxicationManager;
 
@@ -48,10 +51,15 @@ public class ItemPickupSystem : MonoBehaviour
             ItemTest pickupable = hitInfo.collider.GetComponent<ItemTest>();
             if (pickupable != null && currentlyHeldItem == null)
             {
-                // Show a UI prompt like "Press F to pick up"
-                // Debug.Log("Looking at a pickupable item: " + hitInfo.collider.name);
+                //Show a UI prompt like "Press F to pick up"
+                Debug.Log("Looking at a pickupable item: " + hitInfo.collider.name);
+                // Show the "Press F to pick up" text
+                pickupText.gameObject.SetActive(true);
+                return;
             }
         }
+        // Hide the pickup text if not looking at a pickupable object
+        pickupText.gameObject.SetActive(false);
     }
 
     // Try to pick up the item if it is detected
