@@ -43,7 +43,7 @@ In the second phase, we'll ask participants to fill in a form comprising short q
 
 As for the medium we're going to use, we need a versatile system that allows us to collect feedback of all kinds. We're going to use Google Forms, as this platform gives us easy access to responses and enables us to display statistics directly on testers' answers.
 
-![Alt text](Screenshot 2024-10-05 170239.png)
+![Alt text](forms.png)
 
 ## Timeline: What is your timeline for completing the evaluation? When will you make changes to the game?
 
