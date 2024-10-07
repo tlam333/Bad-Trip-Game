@@ -42,13 +42,6 @@ EditorBuildSettings:
     path: Assets/Scenes/FinalGame/SupermarketInterior.unity
     guid: d03daf4a76d412941bee3b2d7a04df4e
   - enabled: 1
-    path: Assets/Scenes/FinalGame/SupermarketInterior.unity
-    guid: d03daf4a76d412941bee3b2d7a04df4e
-  - enabled: 1
-
-    path: Assets/Scenes/FinalGame/MainMenu.unity
-    guid: 85a2a671e75d0874898c84adcf99e925
-  - enabled: 1
     path: Assets/Scenes/FinalGame/VentMaze.unity
     guid: d83c30fc31d167d4dbfb0340f329d46a
   m_configObjects: {}

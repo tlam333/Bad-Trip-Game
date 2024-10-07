@@ -11284,7 +11284,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1195118985078154894, guid: edf7a38a0bd5d8248b1b606c58ac90d3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.59
+      value: -4.69
       objectReference: {fileID: 0}
     - target: {fileID: 1883714366848747057, guid: edf7a38a0bd5d8248b1b606c58ac90d3, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11388,7 +11388,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7434172765864996588, guid: edf7a38a0bd5d8248b1b606c58ac90d3, type: 3}
       propertyPath: scenename
-      value: door1
+      value: VentMaze
       objectReference: {fileID: 0}
     - target: {fileID: 7526392458769007315, guid: edf7a38a0bd5d8248b1b606c58ac90d3, type: 3}
       propertyPath: m_Layer
