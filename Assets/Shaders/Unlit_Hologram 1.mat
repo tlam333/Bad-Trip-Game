@@ -33,7 +33,7 @@ Material:
     - _Amplitude: 3.76
     - _CutOutThresh: 0
     - _Distance: 4.14
-    - _Speed: 9.86
+    - _Speed: 9.21
     - _Transparency: 0.5
     m_Colors:
     - _TintColor: {r: 0, g: 0.010391911, b: 0.6754716, a: 1}
