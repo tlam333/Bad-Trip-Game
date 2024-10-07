@@ -33,7 +33,7 @@ public class TriggerScreenText : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // Display the message and play the sound when an object enters the trigger
-        if (triggerText != null)
+        if (triggerText != null && other.gameObject.CompareTag("Player"))
         {
 
             // Stop any existing coroutine to avoid multiple coroutines running simultaneously
