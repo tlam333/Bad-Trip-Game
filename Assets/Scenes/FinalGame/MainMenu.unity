@@ -1458,7 +1458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenename: Map
-  sceneTransitionPrefab: {fileID: 3150954327588444869, guid: db4fd812f9852124589461766bef2793, type: 3}
+  sceneTransitionPrefab: {fileID: 7674542047549189170, guid: cb2c01e63f6099a4f8613cd71ad0037b, type: 3}
 --- !u!1 &1443151397
 GameObject:
   m_ObjectHideFlags: 0
