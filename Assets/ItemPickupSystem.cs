@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using TMPro;
 
 public class ItemPickupSystem : MonoBehaviour
 {
@@ -10,10 +11,22 @@ public class ItemPickupSystem : MonoBehaviour
 
     public IntoxicationManager intoxicationManager;
 
+    public TextMeshProUGUI pickupText;
+    public TextMeshProUGUI dropText;
+
     public Camera playerCamera;      // The player's camera
     public Transform itemPos;        // The position where the item will be held
 
     private ItemTest currentlyHeldItem;  // Reference to the currently held item
+
+    // Start is called before the first frame update
+    private void Start()
+    {
+        // Initially hide both pickupText and dropText
+        pickupText.gameObject.SetActive(false);
+        dropText.gameObject.SetActive(false);
+    }
+
 
     private void Update()
     {
@@ -49,9 +62,15 @@ public class ItemPickupSystem : MonoBehaviour
             if (pickupable != null && currentlyHeldItem == null)
             {
                 // Show a UI prompt like "Press F to pick up"
-                // Debug.Log("Looking at a pickupable item: " + hitInfo.collider.name);
+                //Debug.Log("Looking at a pickupable item: " + hitInfo.collider.name);
+                // Show the "Press F to pick up" text
+                pickupText.gameObject.SetActive(true);
+                return;
             }
         }
+
+         // Hide the pickup text if not looking at a pickupable object
+        pickupText.gameObject.SetActive(false);
     }
 
     // Try to pick up the item if it is detected
@@ -74,10 +93,15 @@ public class ItemPickupSystem : MonoBehaviour
                 if (pickupable != null)
                 {
                     // Pick up the item
-                    // Debug.Log("Picked up: " + hitInfo.collider.name);
+                    //Debug.Log("Picked up: " + hitInfo.collider.name);
                     currentlyHeldItem = pickupable;
 
+                    // Show the "Press G to drop" text once the item is picked up
+                    dropText.gameObject.SetActive(true);
+
                     pickupable.Pickup(itemPos);
+
+                    
 
                     // Since you only want to pick up one item at a time, exit the loop after picking up the first item
                     break;
@@ -95,6 +119,9 @@ public class ItemPickupSystem : MonoBehaviour
             Debug.Log("Dropped: " + currentlyHeldItem.name);
             currentlyHeldItem.Drop();
             currentlyHeldItem = null;  // Clear the reference after dropping the item
+
+            // Hide the "Press G to drop" text after dropping the item
+            dropText.gameObject.SetActive(false);
         }
     }
 }
