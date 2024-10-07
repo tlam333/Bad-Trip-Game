@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 2424844099934919205}
   - component: {fileID: 6887808024731121263}
   m_Layer: 5
-  m_Name: SceneTransitionPrefab
+  m_Name: Every60Sec
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
