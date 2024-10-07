@@ -43,4 +43,24 @@ In the second phase, we'll ask participants to fill in a form comprising short q
 
 As for the medium we're going to use, we need a versatile system that allows us to collect feedback of all kinds. We're going to use Google Forms, as this platform gives us easy access to responses and enables us to display statistics directly on testers' answers.
 
+![Alt text](forms.png)
 
+## Timeline: What is your timeline for completing the evaluation? When will you make changes to the game?
+
+We expect to interview each candidate for approximately one hour. This hour will be divided into 30 minutes of game testing, 15 minutes of oral interview and 15 minutes for the participant to complete the questionnaire.
+
+The test period will be spread over a short week (about 5 days). Results and trends will be analyzed within two days of the test period. 
+
+Modifications to the game itself will begin immediately after the results have been analyzed.
+
+## Responsibilities: Who is responsible for each task? How will you ensure that everyone contributes equally?
+
+We plan to share the results equally between all developers. Indeed, since each interview will take around 1 hour, it will be complicated to do a large number per participant.
+
+Designing the questionnaire and the interview that will follow the test period is a task in its own right, and will be carried out by one of the developers.
+
+Another developer will analyze the results and understand the trends. This will be followed by a group discussion to identify how this feedback can be incorporated into the game.
+
+Modifying the game will be a joint task.
+
+Within our Group, we operate on the basis of empowerment and trust. We know we can count on each other. When tasks are identified and distributed, each member is responsible for completing the task or communicating his or her inability to complete it on time.
