@@ -3,17 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - Item
+  - Door
+  - Guard
+  - flashlight
+  - Syringe
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PostProcessing
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Main_Scene
+  - whatIsGrounded
+  - ItemLayer
   - 
   - 
   - 

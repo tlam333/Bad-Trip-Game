@@ -3,14 +3,14 @@
 # your project failing to build or deploy, and in such a scenario, will lead to
 # a loss of marks.
 
-name: Gradescope Submit
+name: Build and Deploy (WebGL)
 
-on:
+on: 
   repository_dispatch:
     types: [gradescope-submit]
 
 jobs:
   build-and-deploy:
-    name: Gradescope Submit
-    uses: feit-comp30019/ci-cd/.github/workflows/webgl-proj2.yml@main
+    name: Build and Deploy (WebGL)
+    uses: feit-comp30019/ci-cd/.github/workflows/webgl-proj1.yml@main
     secrets: inherit
