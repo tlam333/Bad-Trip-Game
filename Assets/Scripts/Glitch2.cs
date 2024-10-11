@@ -27,7 +27,7 @@ public class Glitch2 : MonoBehaviour
 
     IEnumerator StartGlitch() {
         glitchDuration = new WaitForSeconds(Random.Range(.05f,.25f));
-        holoRenderer.material.SetFloat("_Amount", .005f);
+        holoRenderer.material.SetFloat("_Amount", .2f);
         // holoRenderer.material.SetColor("_TintColor", new Color32(7, 0, 115, 255)); // blue
         holoRenderer.material.SetColor("_TintColor", new Color32(115, 7, 0, 255)); // red
         holoRenderer.material.SetFloat("_CutOutThresh", .3f);

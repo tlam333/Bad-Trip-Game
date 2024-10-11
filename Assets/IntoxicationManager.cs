@@ -6,7 +6,7 @@ public class IntoxicationManager : MonoBehaviour
 {
     [SerializeField] private Slider intoxicationSlider; // Reference to the UI Slider
     [SerializeField] private float maxIntoxication = 100f; // Max intoxication level
-    private float currentIntoxication = 0f; // Current intoxication level
+    public float currentIntoxication = 0f; // Current intoxication level
 
     // Colors for the intoxication bar
     public Color soberColor = Color.green;
