@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ThomasScene.unity
     guid: 9d006e6f2dcb6404098e386256a92ff4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/supermarket-Jonas.unity
     guid: fe3d23523b2f1384e82988992abe12f0
   - enabled: 1
