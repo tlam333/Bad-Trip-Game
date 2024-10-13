@@ -8,6 +8,8 @@ TagManager:
   - Item
   - Door
   - Guard
+  - flashlight
+  - Syringe
   layers:
   - Default
   - TransparentFX
