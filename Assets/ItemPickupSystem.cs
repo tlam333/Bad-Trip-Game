@@ -10,10 +10,7 @@ public class ItemPickupSystem : MonoBehaviour
     public KeyCode dropKey = KeyCode.G;   // Key to drop items
 
     public TextMeshProUGUI pickupText;
-
     public IntoxicationManager intoxicationManager;
-
-    public TextMeshProUGUI pickupText;
     public TextMeshProUGUI dropText;
 
     public Camera playerCamera;      // The player's camera
