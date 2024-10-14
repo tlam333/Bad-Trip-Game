@@ -7430,9 +7430,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4477191680584418499, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5019117827866035176, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
       propertyPath: groundMask.m_Bits
       value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072435766567613032, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9181447102723218450, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15794,7 +15802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &7865198746757596841
 MeshRenderer:
   m_ObjectHideFlags: 0
