@@ -9,9 +9,9 @@ public class ItemPickupSystem : MonoBehaviour
     public KeyCode pickupKey = KeyCode.F; // Key to pick up items
     public KeyCode dropKey = KeyCode.G;   // Key to drop items
 
-    public IntoxicationManager intoxicationManager;
-
+    public TextMeshProUGUI directionalMessage;
     public TextMeshProUGUI pickupText;
+    public IntoxicationManager intoxicationManager;
     public TextMeshProUGUI dropText;
 
     public Camera playerCamera;      // The player's camera
@@ -68,6 +68,7 @@ public class ItemPickupSystem : MonoBehaviour
                 return;
             }
         }
+
 
          // Hide the pickup text if not looking at a pickupable object
         pickupText.gameObject.SetActive(false);
