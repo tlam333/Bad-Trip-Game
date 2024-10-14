@@ -12117,6 +12117,14 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2963556808417833176, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
+      propertyPath: sensX
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2963556808417833176, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
+      propertyPath: sensY
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3742558798381374661, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.81

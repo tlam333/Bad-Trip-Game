@@ -9,6 +9,7 @@ public class ItemPickupSystem : MonoBehaviour
     public KeyCode pickupKey = KeyCode.F; // Key to pick up items
     public KeyCode dropKey = KeyCode.G;   // Key to drop items
 
+    public TextMeshProUGUI directionalMessage;
     public TextMeshProUGUI pickupText;
     public IntoxicationManager intoxicationManager;
     public TextMeshProUGUI dropText;
