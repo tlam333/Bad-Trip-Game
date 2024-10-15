@@ -11377,7 +11377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4179377082956344046, guid: edf7a38a0bd5d8248b1b606c58ac90d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0007
+      value: 0.00072
       objectReference: {fileID: 0}
     - target: {fileID: 4251223482619639275, guid: edf7a38a0bd5d8248b1b606c58ac90d3, type: 3}
       propertyPath: m_text
@@ -11477,7 +11477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8952678639714746134, guid: edf7a38a0bd5d8248b1b606c58ac90d3, type: 3}
       propertyPath: scenename
-      value: door1
+      value: VentMaze
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2289800347579386441, guid: edf7a38a0bd5d8248b1b606c58ac90d3, type: 3}
@@ -11979,11 +11979,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5019117827866035176, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
       propertyPath: jumpHeight
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5019117827866035176, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
       propertyPath: sprintSpeed
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5019117827866035176, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
       propertyPath: groundMask.m_Bits
