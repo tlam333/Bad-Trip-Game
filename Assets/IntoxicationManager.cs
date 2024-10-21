@@ -1,7 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class IntoxicationManager : MonoBehaviour
 {
     [SerializeField] private Slider intoxicationSlider; // Reference to the UI Slider
@@ -18,12 +18,17 @@ public class IntoxicationManager : MonoBehaviour
     private void Start()
     {
         // Initialize the slider
+        currentIntoxication = maxIntoxication; // the player wakes up drunk to fully intoxicated
         intoxicationSlider.maxValue = maxIntoxication;
         intoxicationSlider.value = currentIntoxication;
 
         // Get the Fill Image component of the slider
         fillImage = intoxicationSlider.fillRect.GetComponent<Image>();
         UpdateSliderColor();
+
+        // Decrease the intoxication over time.
+        // -1f every 2.4 seconds ==> takes 4 minutes to be completely sober
+        StartCoroutine(DecreaseIntoxicationOverTime(10f, 1f));
     }
 
     private void Update()
@@ -31,6 +36,15 @@ public class IntoxicationManager : MonoBehaviour
         // Update the slider value and color in real-time
         intoxicationSlider.value = currentIntoxication;
         UpdateSliderColor();
+    }
+
+    private System.Collections.IEnumerator DecreaseIntoxicationOverTime(float decreaseRate, float period)
+    {
+        while (currentIntoxication > 0)
+        {
+            yield return new WaitForSeconds(period);
+            currentIntoxication -= decreaseRate;
+        }
     }
 
     // Method to change the color of the slider based on intoxication level
@@ -56,7 +70,7 @@ public class IntoxicationManager : MonoBehaviour
             // SmoothStep gradually increases the value with acceleration and deceleration
             float t = Mathf.SmoothStep(0f, 1f, elapsedTime / transitionTime);
             currentIntoxication = Mathf.Lerp(initialIntoxication, targetIntoxication, t);
-            
+        
             elapsedTime += Time.deltaTime;
             yield return null; // Wait until the next frame
         }
@@ -65,3 +79,4 @@ public class IntoxicationManager : MonoBehaviour
         currentIntoxication = targetIntoxication;
     }
 }
+

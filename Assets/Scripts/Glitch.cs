@@ -11,7 +11,7 @@ namespace GlitchSpace {
         private Renderer holoRenderer;
         private WaitForSeconds glitchLoopWait = new WaitForSeconds(.1f);
         private WaitForSeconds glitchDuration = new WaitForSeconds(.1f);
-        public IntoxicationManager IM;
+        IntoxicationManager IM = new IntoxicationManager();
 
         void Awake() {
             holoRenderer = GetComponent<Renderer>();
@@ -19,7 +19,6 @@ namespace GlitchSpace {
 
         IEnumerator Start() {
             while (true) {
-                Debug.Log(glitchChance);
                 float glitchTest = Random.Range(0f, 1f);
 
                 if (glitchTest <= glitchChance) {
@@ -30,8 +29,7 @@ namespace GlitchSpace {
         }
 
         public void Update(){
-            Debug.Log("level:"+ IM.currentIntoxication);
-            glitchChance = IM.currentIntoxication/1000f;
+            glitchChance = IM.currentIntoxication/100f;
             Debug.Log(glitchChance);
         }
 
