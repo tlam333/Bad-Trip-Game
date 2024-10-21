@@ -9,6 +9,8 @@ public class Alcohol : ItemTest {
 
     private bool isUsingAlcohol = false;
 
+    public ParticleSystem alcoholParticleSystem; // Reference to the particle system
+
     public override void Use(IntoxicationManager intoxicationManagerRef)
     {
         if (!isUsingAlcohol) {
@@ -16,8 +18,11 @@ public class Alcohol : ItemTest {
             isUsingAlcohol = true;
 
             intoxicationManagerRef.AddIntoxication();
-            
-            // make invisible
+
+            // Play the particle system
+            alcoholParticleSystem.Play();
+
+            // Make invisible
             /* HERE */
 
             // Initialize and start progress bar
@@ -25,9 +30,19 @@ public class Alcohol : ItemTest {
             itemDurationBar.maxValue = invisibilityDuration; // Set max value
             itemDurationBar.value = invisibilityDuration; // Initialize value
 
+            // Stop the particle system after 3 seconds
+            StartCoroutine(StopParticleSystemAfterDuration(4f));
+
             StartCoroutine(ResetVisibilityAfterDuration(invisibilityDuration));
         }
     }
+
+    private IEnumerator StopParticleSystemAfterDuration(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        alcoholParticleSystem.Stop();
+    }
+
 
     private IEnumerator ResetVisibilityAfterDuration(float duration) {
         float elapsedTime = 0f;
