@@ -343,6 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   glitchChance: 0
+  IM: {fileID: 0}
 --- !u!1 &1277010604743245140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,6 +1460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6451969350644104509}
   - component: {fileID: 2427954669028342586}
+  - component: {fileID: -1901428919974650790}
   - component: {fileID: 1622351310821965025}
   - component: {fileID: 8632778290254620145}
   - component: {fileID: 8670839272561066235}
@@ -1510,6 +1512,19 @@ MonoBehaviour:
   rotationSpeed: 10
   stopDistance: 0.1
   rotationThreshold: 0.01
+--- !u!114 &-1901428919974650790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5963380929386325895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 038d36a209a25b14fbf1b39befbaefec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glitchChance: 0.2
 --- !u!114 &1622351310821965025
 MonoBehaviour:
   m_ObjectHideFlags: 0

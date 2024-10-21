@@ -11,7 +11,7 @@ namespace GlitchSpace {
         private Renderer holoRenderer;
         private WaitForSeconds glitchLoopWait = new WaitForSeconds(.1f);
         private WaitForSeconds glitchDuration = new WaitForSeconds(.1f);
-        IntoxicationManager IM = new IntoxicationManager();
+        public IntoxicationManager IM = new IntoxicationManager();
 
         void Awake() {
             holoRenderer = GetComponent<Renderer>();

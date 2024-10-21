@@ -15437,7 +15437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 464229724}
   - component: {fileID: 464229725}
-  - component: {fileID: 464229726}
+  - component: {fileID: 464229727}
   m_Layer: 0
   m_Name: Ch18
   m_TagString: Untagged
@@ -15565,7 +15565,7 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.024973705, y: -0.11868489, z: -0.017166317}
     m_Extent: {x: 0.4697138, y: 0.95878386, z: 0.33782262}
   m_DirtyAABB: 0
---- !u!114 &464229726
+--- !u!114 &464229727
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15574,10 +15574,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 464229723}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae6df43fdce52542aac193ec6d36912, type: 3}
+  m_Script: {fileID: 11500000, guid: 038d36a209a25b14fbf1b39befbaefec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glitchChance: 0.2
+  glitchChance: 0
 --- !u!1 &464443765
 GameObject:
   m_ObjectHideFlags: 0
@@ -23802,10 +23802,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 684157782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae6df43fdce52542aac193ec6d36912, type: 3}
+  m_Script: {fileID: 11500000, guid: 038d36a209a25b14fbf1b39befbaefec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glitchChance: 0.2
+  glitchChance: 0
 --- !u!1 &684816853
 GameObject:
   m_ObjectHideFlags: 0
@@ -29441,10 +29441,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 836206165}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae6df43fdce52542aac193ec6d36912, type: 3}
+  m_Script: {fileID: 11500000, guid: 038d36a209a25b14fbf1b39befbaefec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glitchChance: 0.2
+  glitchChance: 0
 --- !u!1001 &836419192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31626,10 +31626,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 899599805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae6df43fdce52542aac193ec6d36912, type: 3}
+  m_Script: {fileID: 11500000, guid: 038d36a209a25b14fbf1b39befbaefec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glitchChance: 0.2
+  glitchChance: 0
 --- !u!1 &899733470 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 175688, guid: be11ab6aad4338d4d8ad965540935796, type: 3}
@@ -34157,10 +34157,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 982564570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae6df43fdce52542aac193ec6d36912, type: 3}
+  m_Script: {fileID: 11500000, guid: 038d36a209a25b14fbf1b39befbaefec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glitchChance: 0.2
+  glitchChance: 0
 --- !u!1 &983888564
 GameObject:
   m_ObjectHideFlags: 0
@@ -35641,7 +35641,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1013035170}
   - component: {fileID: 1013035171}
-  - component: {fileID: 1013035172}
+  - component: {fileID: 1013035173}
   m_Layer: 0
   m_Name: Ch18
   m_TagString: Untagged
@@ -35769,7 +35769,7 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.024973705, y: -0.11868489, z: -0.017166317}
     m_Extent: {x: 0.4697138, y: 0.95878386, z: 0.33782262}
   m_DirtyAABB: 0
---- !u!114 &1013035172
+--- !u!114 &1013035173
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35778,10 +35778,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1013035169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae6df43fdce52542aac193ec6d36912, type: 3}
+  m_Script: {fileID: 11500000, guid: 038d36a209a25b14fbf1b39befbaefec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glitchChance: 0.2
+  glitchChance: 0
 --- !u!1 &1013275772
 GameObject:
   m_ObjectHideFlags: 0
@@ -63323,10 +63323,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1713033778}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae6df43fdce52542aac193ec6d36912, type: 3}
+  m_Script: {fileID: 11500000, guid: 038d36a209a25b14fbf1b39befbaefec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glitchChance: 0.2
+  glitchChance: 0
 --- !u!1 &1715248716
 GameObject:
   m_ObjectHideFlags: 0
@@ -67805,10 +67805,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1846406339}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae6df43fdce52542aac193ec6d36912, type: 3}
+  m_Script: {fileID: 11500000, guid: 038d36a209a25b14fbf1b39befbaefec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glitchChance: 0.2
+  glitchChance: 0
 --- !u!1001 &1846795607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -80412,10 +80412,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1224250179999421051}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ae6df43fdce52542aac193ec6d36912, type: 3}
+  m_Script: {fileID: 11500000, guid: 038d36a209a25b14fbf1b39befbaefec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glitchChance: 0.5
+  glitchChance: 0.2
 --- !u!1 &8379341200431806549
 GameObject:
   m_ObjectHideFlags: 0

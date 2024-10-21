@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Glitch2 : MonoBehaviour
 {
-    public float glitchChance = 1f;
+    public float glitchChance;
 
     private Renderer holoRenderer;
     private WaitForSeconds glitchLoopWait = new WaitForSeconds(.1f);
