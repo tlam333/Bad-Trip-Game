@@ -6,7 +6,7 @@ using UnityEngine;
 namespace GlitchSpace {
     public class Glitch : MonoBehaviour
     {
-        public float glitchChance = 0f;
+        public float glitchChance;
 
         private Renderer holoRenderer;
         private WaitForSeconds glitchLoopWait = new WaitForSeconds(.1f);
