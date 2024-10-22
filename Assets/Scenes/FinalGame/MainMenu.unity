@@ -1285,10 +1285,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 586792487}
   m_HandleRect: {fileID: 1443151398}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: 3
+  m_MaxValue: 10
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 3
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1556,6 +1556,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenename: Map
   sceneTransitionPrefab: {fileID: 7674542047549189170, guid: cb2c01e63f6099a4f8613cd71ad0037b, type: 3}
+  speedSlider: {fileID: 786056356}
 --- !u!1 &1443151397
 GameObject:
   m_ObjectHideFlags: 0

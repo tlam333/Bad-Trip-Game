@@ -31,9 +31,13 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     void Start()
     {
-        // Get the CharacterController component
         controller = GetComponent<CharacterController>();
-        targetHeight = standHeight; // Start at standing height
+        targetHeight = standHeight;
+
+        // Set the move speed based on the value from the main menu
+        moveSpeed = MainMenu.playerSpeed;
+        sprintSpeed = moveSpeed * 1.5f;   // Adjust sprint speed accordingly
+        crouchSpeed = moveSpeed * 0.75f;  // Adjust crouch speed accordingly
     }
 
     void Update()

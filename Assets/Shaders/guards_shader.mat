@@ -36,6 +36,6 @@ Material:
     - _Speed: 5.49
     - _Transparency: 0.277
     m_Colors:
-    - _TintColor: {r: 0, g: 0.006100264, b: 0.2754717, a: 1}
+    - _TintColor: {r: 0.20754719, g: 0, b: 0.033797257, a: 1}
     - _Tintcolor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
