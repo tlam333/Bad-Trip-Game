@@ -7410,6 +7410,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1747520208758614445, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
+      propertyPath: m_text
+      value: 'Press F to pickup
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 3675715184086158683, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

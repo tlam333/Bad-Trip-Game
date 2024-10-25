@@ -11,6 +11,12 @@ public class BeamDetection : MonoBehaviour
 
     public AudioSource detectionSound;
 
+    private void Start()
+        {
+        // Ensure the text is hidden when the game starts
+        beamDetectedText.gameObject.SetActive(false);
+        }
+
    void OnTriggerEnter(Collider other)
 {
     // Check if the object that entered the trigger is the player and if the script is active
