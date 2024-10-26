@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalGame/door3.unity
     guid: 3a8b38e14ec03fa4098e27f20dbc80f5
+  - enabled: 1
+    path: Assets/Scenes/FinalGame/EndScene.unity
+    guid: 0dc0af983987b3146889157e0f7a9c8b
   m_configObjects: {}
