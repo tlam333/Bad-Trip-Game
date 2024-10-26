@@ -9,6 +9,8 @@ public class Bong : ItemTest {
 
     private bool isUsingBong = false;
 
+    public ParticleSystem ParticleSystem; // Reference to the particle system
+
 
     public override void Use(IntoxicationManager intoxicationManagerRef)
     {
@@ -16,6 +18,9 @@ public class Bong : ItemTest {
             isUsingBong = true;
 
             intoxicationManagerRef.AddIntoxication();
+
+            // Play the particle system
+            ParticleSystem.Play();
 
             // Set Jump Height
             // playerMovementAdvanced.SetJumpHeight(playerMovementAdvanced.GetJumpHeight() * 3);
@@ -28,8 +33,17 @@ public class Bong : ItemTest {
             itemDurationBar.maxValue = jumpBoostDuration; // Set max value
             itemDurationBar.value = jumpBoostDuration; // Initialize value
 
+            // Stop the particle system after 3 seconds
+            StartCoroutine(StopParticleSystemAfterDuration(4f));
+
             StartCoroutine(ResetJumpHeightAfterDuration(jumpBoostDuration));
         }
+    }
+
+    private IEnumerator StopParticleSystemAfterDuration(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        ParticleSystem.Stop();
     }
 
     private IEnumerator ResetJumpHeightAfterDuration(float duration) {
