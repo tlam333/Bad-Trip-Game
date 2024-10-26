@@ -52079,6 +52079,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Container v8
       objectReference: {fileID: 0}
+    - target: {fileID: 4477191680584418499, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5019117827866035176, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
       propertyPath: moveSpeed
       value: 2
@@ -52094,6 +52098,10 @@ PrefabInstance:
     - target: {fileID: 5019117827866035176, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
       propertyPath: sprintSpeed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072435766567613032, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9181447102723218450, guid: 66927603ceef3c6428a3359fa7d2554b, type: 3}
       propertyPath: m_LocalPosition.x
