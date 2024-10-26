@@ -9,7 +9,7 @@ public class DiorSauvage : ItemTest {
     // [SerializeField] PlayerMovement playerMovement;
     public Material opaqueMat;
     public Material transparentMat;
-
+    public ParticleSystem ParticleSystem; // Reference to the particle system
 
     private bool isUsingDior = false;
 
@@ -19,6 +19,9 @@ public class DiorSauvage : ItemTest {
             isUsingDior = true;
 
             intoxicationManagerRef.AddIntoxication();
+
+            // Play the particle system
+            ParticleSystem.Play();
             
             // Neutrilize Guard Logic
             ChangeRenderMode(true);
@@ -28,8 +31,17 @@ public class DiorSauvage : ItemTest {
             itemDurationBar.maxValue = tranquilizeGuardDuration; // Set max value
             itemDurationBar.value = tranquilizeGuardDuration; // Initialize value
 
+            // Stop the particle system after 3 seconds
+            StartCoroutine(StopParticleSystemAfterDuration(4f));
+
             StartCoroutine(ResetGuardAfterDuration(tranquilizeGuardDuration));
         }
+    }
+
+    private IEnumerator StopParticleSystemAfterDuration(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        ParticleSystem.Stop();
     }
 
     private IEnumerator ResetGuardAfterDuration(float duration) {
