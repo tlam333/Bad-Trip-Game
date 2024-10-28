@@ -98,4 +98,12 @@ public class PlayerMovementAdvanced : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
+
+    public float GetJumpHeight() {
+        return jumpHeight;
+    }
+
+    public void SetJumpHeight(float jumpHeight) {
+        this.jumpHeight = jumpHeight;
+    }
 }

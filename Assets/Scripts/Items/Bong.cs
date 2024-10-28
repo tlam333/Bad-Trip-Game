@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Bong : ItemTest {
 
     [SerializeField] float jumpBoostDuration = 5f;
-    // [SerializeField] PlayerMovementAdvanced playerMovementAdvanced;
+    [SerializeField] PlayerMovementAdvanced playerMovementAdvanced;
 
     private bool isUsingBong = false;
 
@@ -23,7 +23,7 @@ public class Bong : ItemTest {
             ParticleSystem.Play();
 
             // Set Jump Height
-            // playerMovementAdvanced.SetJumpHeight(playerMovementAdvanced.GetJumpHeight() * 3);
+            playerMovementAdvanced.SetJumpHeight(playerMovementAdvanced.GetJumpHeight() * 3);
 
             // Set Gravity
             // playerMovementAdvanced.SetGravity(playerMovementAdvanced.GetGravity() / 8);
@@ -56,7 +56,7 @@ public class Bong : ItemTest {
         }
 
         // Reset Jump Height
-        //playerMovementAdvanced.SetJumpHeight(playerMovementAdvanced.GetJumpHeight() / 3);
+        playerMovementAdvanced.SetJumpHeight(playerMovementAdvanced.GetJumpHeight() / 3);
 
         // Reset Gravity
         // playerMovementAdvanced.SetGravity(playerMovement.GetGravity() * 8);
