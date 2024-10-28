@@ -44,7 +44,7 @@ namespace GlitchSpace {
             yield return glitchDuration;
             holoRenderer.material.SetFloat("_Amount", 0f);
             holoRenderer.material.SetFloat("_CutOutThresh", 0f);
-            holoRenderer.material.SetColor("_TintColor", new Color32(115, 101, 0, 255)); // yellow
+            holoRenderer.material.SetColor("_TintColor", new Color32(0, 0, 0, 255)); // yellow
         }
     }
 }
