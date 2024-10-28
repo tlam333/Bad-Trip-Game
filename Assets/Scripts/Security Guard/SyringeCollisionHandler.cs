@@ -6,13 +6,13 @@ public class SyringeCollisionHandler : MonoBehaviour
 
     // Reference to guard's components (optional, but more efficient if pre-referenced)
     private guard_animator guardAnimator;
-    private GuardPatrol guardPatrol;
+    private SimpleGuardPatrol guardPatrol;
 
     void Start()
     {
         // Cache references to the components (you can also drag and drop in the Inspector if you prefer)
         guardAnimator = GetComponent<guard_animator>();
-        guardPatrol = GetComponent<GuardPatrol>();
+        guardPatrol = GetComponent<SimpleGuardPatrol>();
     }
 
     // Detect collision with the syringe object
