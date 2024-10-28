@@ -6162,7 +6162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc65ccbe6277024fa47abb6481022a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 1283001115}
+  respawnPoint: {fileID: 855575660}
   beamDetectedText: {fileID: 1855896932}
   textDisplayDuration: 2
   detectionSound: {fileID: 180302731}
@@ -20313,7 +20313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc65ccbe6277024fa47abb6481022a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 1283001115}
+  respawnPoint: {fileID: 855575660}
   beamDetectedText: {fileID: 1855896932}
   textDisplayDuration: 2
   detectionSound: {fileID: 562575106}
@@ -33388,7 +33388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc65ccbe6277024fa47abb6481022a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 855575660}
+  respawnPoint: {fileID: 1283001115}
   beamDetectedText: {fileID: 1855896932}
   textDisplayDuration: 2
   detectionSound: {fileID: 941050595}
@@ -43142,7 +43142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc65ccbe6277024fa47abb6481022a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 855575660}
+  respawnPoint: {fileID: 1283001115}
   beamDetectedText: {fileID: 1855896932}
   textDisplayDuration: 2
   detectionSound: {fileID: 1204876093}
@@ -43786,7 +43786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc65ccbe6277024fa47abb6481022a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 855575660}
+  respawnPoint: {fileID: 1283001115}
   beamDetectedText: {fileID: 1855896932}
   textDisplayDuration: 2
   detectionSound: {fileID: 1216357652}
@@ -46376,7 +46376,7 @@ Transform:
   m_GameObject: {fileID: 1283001114}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.54, y: 5.72, z: -229.23}
+  m_LocalPosition: {x: 3.12, y: 2.23, z: -3.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51808,7 +51808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc65ccbe6277024fa47abb6481022a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 1283001115}
+  respawnPoint: {fileID: 855575660}
   beamDetectedText: {fileID: 1855896932}
   textDisplayDuration: 2
   detectionSound: {fileID: 1420205474}
@@ -57946,7 +57946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc65ccbe6277024fa47abb6481022a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 855575660}
+  respawnPoint: {fileID: 1283001115}
   beamDetectedText: {fileID: 1855896932}
   textDisplayDuration: 2
   detectionSound: {fileID: 1561980489}
@@ -74761,7 +74761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc65ccbe6277024fa47abb6481022a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 1283001115}
+  respawnPoint: {fileID: 855575660}
   beamDetectedText: {fileID: 1855896932}
   textDisplayDuration: 2
   detectionSound: {fileID: 2031480813}
@@ -80398,7 +80398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc65ccbe6277024fa47abb6481022a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPoint: {fileID: 1283001115}
+  respawnPoint: {fileID: 855575660}
   beamDetectedText: {fileID: 1855896932}
   textDisplayDuration: 2
   detectionSound: {fileID: 5867290237241490059}
